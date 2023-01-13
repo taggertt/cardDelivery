@@ -1,0 +1,6 @@
+/.gradle
+/build
+/.idea
+/out
+/target
+/src/main/java/Main.java

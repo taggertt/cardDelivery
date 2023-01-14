@@ -9,8 +9,6 @@ import static java.time.Duration.ofMillis;
 
 public class TestDeliveryForm {
 
-    @BeforeEach
-
     @Test
     void shouldSuccessfullyDeliveryForm() { // Simply test without options for set date
         open("http://localhost:9999");

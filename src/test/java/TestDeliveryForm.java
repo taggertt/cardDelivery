@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,6 +9,11 @@ import static com.codeborne.selenide.Selenide.*;
 import static java.time.Duration.ofMillis;
 
 public class TestDeliveryForm {
+
+    @BeforeEach
+    void setup() {
+        Configuration.browser = "Chrome";
+    }
 
     @Test
     void shouldSuccessfullyDeliveryForm() { // Simply test without options for set date

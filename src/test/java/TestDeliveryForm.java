@@ -1,3 +1,5 @@
+import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 import static com.codeborne.selenide.Condition.visible;
@@ -7,6 +9,7 @@ import static java.time.Duration.ofMillis;
 
 public class TestDeliveryForm {
 
+    @BeforeEach
 
     @Test
     void shouldSuccessfullyDeliveryForm() { // Simply test without options for set date

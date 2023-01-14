@@ -13,6 +13,5 @@ install:
   - chmod +x gradlew
 
 build_script:
-  - Dselenide.headless=true test
-  - ./gradlew test --info
+  ./gradlew test -Dselenide.headless=true —info
 

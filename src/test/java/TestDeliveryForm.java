@@ -13,6 +13,7 @@ public class TestDeliveryForm {
     @BeforeEach
     void setup() {
         Configuration.browser = "Chrome";
+        Configuration.headless = true;
     }
 
     @Test

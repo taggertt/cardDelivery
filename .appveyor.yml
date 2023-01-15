@@ -13,4 +13,5 @@ install:
   - chmod +x gradlew
 
 build_script:
-  ./gradlew test -Dselenide.headless=true -info
+  ./gradlew test -Dselenide.headless=true -Dselenide.disable-infobars=true -Dselenide.disable-extensions=true -info
+  

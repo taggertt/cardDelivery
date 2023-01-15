@@ -1,11 +1,12 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static java.time.Duration.ofMillis;
 
 public class TestDeliveryForm {
@@ -14,6 +15,7 @@ public class TestDeliveryForm {
     void setup() {
         Configuration.browser = "Chrome";
         Configuration.headless = true;
+        baseUrl = "http://google.com";
     }
 
     @Test

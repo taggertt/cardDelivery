@@ -17,11 +17,6 @@ import static java.time.Duration.ofMillis;
 
 public class TestDeliveryForm {
 
-    @BeforeEach
-    void setup() {
-        baseUrl = "http://google.com";
-    }
-
     public static String generateDate(int change){
         return LocalDate.now().plusDays(change).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
